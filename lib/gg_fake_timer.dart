@@ -3,6 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/gg_fake_timer_base.dart';
+export 'src/gg_fake_timer.dart';
 
 // TODO: Export any libraries intended for clients of this package.
