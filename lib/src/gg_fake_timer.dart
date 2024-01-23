@@ -6,12 +6,15 @@
 
 import 'dart:async';
 
+/// A fake timer class
 class GgFakeTimer implements Timer {
   // ...........................................................................
-  // Create a normal timer
-  GgFakeTimer(this.interval, void Function() callback,
-      {required this.isPeriodic})
-      : _callback = callback;
+  /// Create a normal timer
+  GgFakeTimer(
+    this.interval,
+    void Function() callback, {
+    required this.isPeriodic,
+  }) : _callback = callback;
 
   // ...........................................................................
   /// Create a periodic timer
@@ -55,6 +58,7 @@ class GgFakeTimer implements Timer {
   }
 
   // ...........................................................................
+  /// Returns the elapsed time
   void fire() => elapse(_currentDuration + interval);
 
   // ...........................................................................
